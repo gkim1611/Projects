@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0px;
+    z-index: 1001;
+    background-color: black;
+}
+
+#navbar a {
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    display: block;
+    color: #fff;
+    padding-right: 5px;
+}
+
+#navbar a:hover, #navbar #active-nav {
+    color: #D3F9B5;
+}
+
+p {
+    color: white;
+}
+
+#duck {
+    width: 55px;
+    height: 55px;
+    padding-top: 5px;
+    background: url("img/duckdance.gif") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 5px;
+
+    margin-right: auto;
+}
+#duck:hover {
+    background: url("img/duckwater.gif") no-repeat;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    background-position: center;
+}
+#wilson {
+    font-size: .75em;
+    margin: 0px;
+    padding: 5px;
+    margin-right: auto;
+    text-align: left;
+    position: static;
+    color: white;
+}
+#ducky {
+    margin-right: auto;
+}

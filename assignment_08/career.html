@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Career</title>
+        
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            h1 {
+                color: black;
+                padding-top: 10px;
+                font-size: 1.5em;
+            }
+            h2 {
+                color: white;
+                font-size: 1.2em;
+            }
+            h3 {
+                color: white;
+                font-size: 1.1em;
+            }
+            h4 {
+                color: white;
+                font-size: 1em;
+            }
+
+            #content {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top: 160px;
+                left: 40px;
+                padding: 5px;
+                display: flex;
+                z-index: 10001;
+            }
+
+            #side {
+                width: 320px;
+                padding: 5px 10px;
+                background-color: white;
+                text-align: center;
+                border: 2px solid white;
+                border-radius: 20px;
+                margin: 0px;
+
+                display: block;
+            }
+
+            #main {
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 5px 20px;
+                margin: 0px 10px;
+            }
+
+            #profile {
+                width: 240px;
+                border: 2px solid white;
+                border-radius: 50%;
+            } 
+            .job {
+                background-color: black;
+                width: 800px;
+                height: 90px;
+                margin: 20px 5px 20px;
+                padding: 0px 10px 2px;
+                border: 2px solid #D3F9B5;
+                border-radius: 20px;
+            }
+
+            .job:hover {
+                transform: scale(1.05);
+            }
+
+            #quote {
+                font-size: 1.5em;
+                color: black;
+            }
+            #resume {
+                font-size: 1.2em;
+                color: rgb(0, 108, 16);
+            }
+
+            .text {
+                color: black;
+            }
+            .location {
+                float: right;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div id="ducky">
+
+                <div id="duck"></div>
+                <p id="wilson">hover to give wilson the duck a bath!</p>
+
+            </div>
+            <a href="index.html" >home.</a>
+            <a href="aboutme.html">about me.</a>
+            <a id="active-nav" href="career.html">career.</a>
+            <a href="projects.html">projects.</a>
+            <a href="contact.html">contact.</a>
+        </div> <!-- #navbar -->
+
+    
+        <div id="content">
+
+            <div id="side">
+                <h1>My Journey</h1>
+                <img id="profile" src="img/work.png" alt="profile">
+                <p class="text">I believe that doing your best in whatever you do, no matter how trivial the job, will give you priceless experiences you can't ever get from a textbook. </p>
+                <hr>
+                <p id="quote"><em>"Fill your life <br> with experiences, <br> not things. <br> Have stories to tell, <br> not stuff to show."</em> <br> - Anonymous</p>
+                
+                <p class="text">here is my detailed <strong><a id="resume" href="files/gKim_resume.pdf" download="">résumé</a></strong> if you're interested</p>
+            </div>            
+
+            <div id="main">
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>Cybersecurity Consultant Intern</h2>
+                    <h3>Ernst & Young | June 2022 - August 2022</h3>  
+                </div>
+
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>Website Quality Assurance Manager</h2>
+                    <h3>USC Metrans | September 2020 - January 2021</h3>
+                </div>  
+                
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>Research Intern</h2>
+                    <h3>Sponsored Project Accounting | September 2019 - May 2020</h3>
+                </div>   
+            
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>Web Designer</h2>
+                    <h3>USC Questbridge Chapter | August 2020 - October 2021</h3>
+                </div>  
+
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>Data Manager</h2>
+                    <h3>JoongAng Ilbo | June 2015 - May 2019</h3>
+                </div>
+
+                <div class="job">
+                    <h4 class="location">Los Angeles, California, US</h4>                   
+                    <h2>University of Southern California</h2>
+                    <h3>B.S in Computer Science and Business Administration | Expected May 2023</h3>
+                </div>
+
+            </div>
+        </div> <!-- #content -->
+
+    </body>  <!-- body -->
+</html>

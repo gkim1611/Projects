@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breakfast</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <style>
+
+            body {
+                background-color: #A98875;
+                padding: 10px;
+            }    
+
+            #header {
+                background-image: url("img/wall.jpg");
+                background-size: cover;
+                background-position: bottom;
+
+                color: #000;
+                font-size: 2em;
+                /* aligning horizontally has 3 ways, 2 for now: */
+                line-height: 580px;
+
+                width: 1080px;
+                height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+
+                padding: 10px;
+            }
+
+            #main {
+                width: 1080px;
+                height: 850px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #B0D09F;
+                padding: 10px;
+            }
+
+            #gallery {
+                display: flex;
+                float: left;
+                flex-wrap: wrap;
+            }
+
+            h2 {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1.75em;
+                margin: 0px;
+                padding: 5px;
+            }
+            
+            p {
+                padding: 5px;
+            }
+
+            .img-container {
+                position: relative;
+                overflow: hidden;
+            }
+
+            #p1 > img {
+			/*width: 100%;
+			height: auto;*/
+                height: 350px;
+			    width: auto;
+		    }
+
+            #p2 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 400px;
+			    width: auto;
+		    }
+
+            #p3 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 400px;
+			    width: auto;
+		    }
+
+            #p4 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 500px;
+			    width: auto;
+                position: relative;
+                bottom: 100px;
+		    }
+
+            #p5 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 400px;
+			    width: auto;
+                position: relative;
+                right: 171px;
+                bottom: 43px;
+		    }
+
+            #p6 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 400px;
+			    width: auto;
+                position: relative;
+                bottom: 70px;
+		    }
+
+            #p7 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 690px;
+			    width: auto;
+		    }
+
+            #p8 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 300px;
+			    width: auto;
+                position: relative;
+                bottom: 40px;
+		    }
+
+            #p9 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 200px;
+			    width: auto;
+		    }
+
+            #p10 > img {
+			/*width: 100%;
+			height: auto;*/
+			    height: 300px;
+			    width: auto;
+		    }
+
+            .img-container > .caption {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 100px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+
+            #p1 > .caption  {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 160px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+
+            #p1:hover > .caption {
+                visibility: visible;
+            }
+
+            #p2:hover > .caption {
+                visibility: visible;
+            }
+
+            #p2 > .caption  {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 160px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+
+            #p3 > .caption  {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 160px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+            #p3:hover > .caption {
+                visibility: visible;
+            }
+
+            #p4 > .caption  {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 160px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+            #p4:hover > .caption {
+                visibility: visible;
+            }
+
+            #p5 > .caption  {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                text-align: center;
+                padding-top: 160px;
+
+                /*background-color: #000;*/
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+
+                /*opacity: 0.6;*/
+
+                visibility: hidden;
+            }
+            #p5:hover > .caption {
+                visibility: visible;
+            }
+
+            .img-container:hover > .caption {
+                visibility: visible;
+            }
+
+            #p1 {
+                height: 350px;
+                width: 205.9px;
+                margin: 5px;
+            }
+
+            #p2 {
+                height: 350px;
+                width: 205.9px;
+                margin: 5px;
+            }
+            #p3 {
+                height: 350px;
+                width: 205.9px;
+                margin: 5px;
+            }
+            #p4 {
+                height: 350px;
+                width: 205.9px;
+                margin: 5px;               
+            }
+            #p5 {
+                height: 350px;
+                width: 205.9px;
+                margin: 5px;
+            }
+            #p6 {
+                height: 200px;
+                width: 530px;
+                margin: 5px;
+            }
+            #p7 {
+                height: 200px;
+                width: 530px;
+                margin: 5px;
+            }
+            #p8 {
+                height: 200px;
+                width: 425px;
+                margin: 5px;
+            }
+            #p9 {
+                height: 200px;
+                width: 200px;
+                margin: 5px;
+            }
+            #p10 {
+                height: 200px;
+                width: 425px;
+                margin: 5px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id = "header">
+            <h1>Photo Gallery</h1>
+        </div> <!-- #header -->
+        <div id="navbar">
+            <ul>
+                <li>
+                    <a href="index.html#info">Home</a>
+                    <ul>
+                        <li><a href="index.html#first">Importance</a></li>
+                        <li><a href="index.html#second">Favorites</a></li>
+                        <li><a href="index.html#third">Filming</a></li>
+                    </ul>
+                </li>
+                <li><a id="active-nav" href="gallery.html">Gallery</a></li>
+            </ul>
+        </div> <!-- #navbar -->
+    
+        <div id="main">
+            <h2>Image Collage</h2>
+            <div id = "gallery">
+                <!-- 1 -->
+                <div class="img-container" id="p1">
+                    <img src="img/gallery/bread.jpg" alt="bread">
+                        <div class="caption">
+                            Croissants
+                        </div>
+                </div> <!-- .img-container -->
+                
+                <!-- 2 -->
+                <div class="img-container" id="p2">
+                    <img src="img/gallery/eggtoast.jpg" alt="eggtoast">
+                        <div class="caption">
+                            Egg Toast
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 3 -->
+                <div class="img-container" id="p3">
+                    <img src="img/gallery/toast.jpg" alt="toast">
+                        <div class="caption">
+                            French Toast
+                        </div>
+                </div> <!-- .img-container -->
+                
+                <!-- 4 -->
+                <div class="img-container" id="p4">
+                    <img src="img/gallery/cereal.jpg" alt="cereal">
+                        <div class="caption">
+                            Cereal
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 5 -->
+                <div class="img-container" id="p5">
+                    <img src="img/gallery/yogurt.jpg" alt="yogurt">
+                        <div class="caption">
+                            Yogurt
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 6 -->
+                <div class="img-container" id="p6">
+                    <img src="img/gallery/acai.jpg" alt="acai">
+                        <div class="caption">
+                            Acai Bowl
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 7 -->
+                <div class="img-container" id="p7">
+                    <img src="img/gallery/rolls.jpg" alt="rolls">
+                        <div class="caption">
+                            Cinnamon Rolls
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 8 -->
+                <div class="img-container" id="p8">
+                    <img src="img/gallery/pancake.jpg" alt="pancake">
+                        <div class="caption">
+                            Pancake
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 9 -->
+                <div class="img-container" id="p9">
+                    <img src="img/gallery/dish.jpg" alt="dish">
+                        <div class="caption">
+                            Cheese Dish
+                        </div>
+                </div> <!-- .img-container -->
+
+                <!-- 10 -->
+                <div class="img-container" id="p10">
+                    <img src="img/gallery/grilled.jpg" alt="grilled">
+                        <div class="caption">
+                            Grilled Cheese
+                        </div>
+                </div> <!-- .img-container -->
+            </div> <!-- gallery -->
+        </div> <!-- #main -->
+
+        <div id = "footer">
+            <h3>Contact</h3>
+    
+            <p><a href="https://www.tiktok.com/@gnarlygrandmother" target="_blank">Watch on Tiktok</a> | <a href="https://www.instagram.com/gnarlygrandmother/" target ="_blank">Follow on Instagram</a> | <a href="https://www.linkedin.com/in/gracehdkim/" target ="_blank">Connect on LinkedIn</a></p>
+        
+            <p>@gnarlygrandmother &copy; 2022</p>
+        </div> <!-- footer -->
+    </body>
+</html>

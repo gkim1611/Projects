@@ -1,0 +1,101 @@
+
+@font-face {
+	font-family: "charlotte";
+	src: url("fonts/charlotte.ttf");
+}
+
+#header {
+	text-align: center;
+	font-family: "charlotte";
+}
+
+#footer {
+    background-color: #DACEBE;
+    margin: 20px;
+    padding: 10px;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+	display: flex;
+	justify-content: center;
+	background-color: #145216;
+}
+
+/* Two options:  */
+/* #navbar > a {}  */
+#navbar a {
+	text-decoration: none;
+	/*background-color: #FC0;*/
+
+	/* 
+		width of #main = 600px
+		# of menu options = 4
+		width per menu option: 600px / 4 = 150px;
+	 */
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+
+	display: block;
+	color: #fff;
+	border-bottom: 2px solid #FFF;
+}
+
+#navbar a:hover, #navbar #active-nav {
+	/* 
+		This CSS only applies to <a> tags
+		that are being hovered over.
+	*/
+	color: rgb(143, 255, 174);
+	border-bottom: 2px solid rgb(143, 255, 174);
+}
+
+#navbar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar li {
+	/*
+		width of #main = 720px;
+		# of top-lvl menu options = 4
+		width per menu option = 720px / 4 = 180px;
+	*/
+	background-color: #145216;
+	text-align: center;
+
+	position: relative;
+}
+
+#navbar > ul {
+	display: flex;
+	align-items: flex-start;
+	z-index: 9999;
+}
+
+#navbar li:hover {
+	background-color: #331e08;
+}
+
+#navbar > ul ul {
+	position: absolute;
+	display: none;
+}
+
+/* Effectively selects the third-lvl <ul> tag.  */
+#navbar > ul ul ul {
+	top: 0px;
+	left: 180px; /* width of <li> tags. */
+}
+
+#navbar li:hover > ul {
+	display: block;
+}
