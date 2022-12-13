@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interests Photo Gallery</title>
+
+	<style>
+		body {
+			background-color: #A98875;
+		}
+		#header {
+			background-color: #504a49;
+			color: #FFF;
+			font-size: 2em;
+			text-align: center;
+
+			width: 1060px;
+			margin-left: auto;
+			margin-right: auto;
+
+			padding: 10px;
+		}
+
+		#main {
+			width: 1080px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #B0D09F;
+		}
+		/* Image Gallery */
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+
+		}
+		.thumbnail {
+			/* [ 1080 - (5px margin * 6 pictures * 2 sides) ] / 6 pictures*/
+			width: 169px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.7; /* 70% opaque OR 30% transparent */
+			float: left;
+		}
+
+		.thumbnail:hover {
+			opacity: 1.0; /* 100% opaque OR 0% transparent */
+		}
+
+		.thumbnail + p {
+			text-align: center;
+			/*display: none;*/
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			/*display: block;*/
+			visibility: visible;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>Interests Photo Gallery</h1>
+	</div> <!-- #header -->
+
+	<div id="main">
+		<div id="gallery">
+
+			<div class="img-container">
+				<img class="thumbnail" id="one" src="img/breakfast.jpg" alt="Breakfast">
+				<p>Breakfast</p>
+			</div> <!-- .img-container -->
+
+			<div class="img-container">
+				<img class="thumbnail" id="two" src="img/duck.jpg" alt="Ducks">
+				<p>Ducks</p>
+			</div> <!-- .img-container -->
+
+			<div class="img-container">
+				<img class="thumbnail" id="three" src="img/filming.jpg" alt="Filming">
+				<p>Filming</p>
+			</div> <!-- .img-container -->
+
+			<div class="img-container">
+				<img class="thumbnail" id="four" src="img/gym.jpg" alt="Gym">
+				<p>Gym</p>
+			</div> <!-- .img-container -->
+
+			<div class="img-container">
+				<img class="thumbnail" id="five" src="img/house.jpg" alt="Houses">
+				<p>Houses</p>
+			</div> <!-- .img-container -->
+
+			<div class="img-container">
+				<img class="thumbnail" id="six" src="img/travel.jpg" alt="Traveling">
+				<p>Traveling</p>
+			</div> <!-- .img-container -->
+
+		</div> <!-- #gallery -->
+
+	</div> <!-- #main -->
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script>
+
+		$('#one').click(function(){
+    		$("#one").css('border', '3px solid black'); 
+			$("#two").css('border', '0px solid black');
+    		$("#three").css('border', '0px solid black');
+    		$("#four").css('border', '0px solid black'); 
+    		$("#five").css('border', '0px solid black'); 
+    		$("#six").css('border', '0px solid black'); 
+		});
+
+		$('#two').click(function(){
+    		$("#two").css('border', '3px solid black'); 
+			$("#one").css('border', '0px solid black'); 
+    		$("#three").css('border', '0px solid black');
+    		$("#four").css('border', '0px solid black'); 
+    		$("#five").css('border', '0px solid black'); 
+    		$("#six").css('border', '0px solid black'); 
+		});
+
+		$('#three').click(function(){
+    		$("#three").css('border', '3px solid black'); 
+			$("#one").css('border', '0px solid black'); 
+			$("#two").css('border', '0px solid black');
+    		$("#four").css('border', '0px solid black'); 
+    		$("#five").css('border', '0px solid black'); 
+    		$("#six").css('border', '0px solid black'); 
+		});
+
+		$('#four').click(function(){
+    		$("#four").css('border', '3px solid black'); 
+			$("#one").css('border', '0px solid black'); 
+			$("#two").css('border', '0px solid black');
+    		$("#three").css('border', '0px solid black');
+    		$("#five").css('border', '0px solid black'); 
+    		$("#six").css('border', '0px solid black'); 
+		});
+
+		$('#five').click(function(){
+    		$("#five").css('border', '3px solid black'); 
+			$("#one").css('border', '0px solid black'); 
+			$("#two").css('border', '0px solid black');
+    		$("#three").css('border', '0px solid black');
+    		$("#four").css('border', '0px solid black'); 
+    		$("#six").css('border', '0px solid black'); 
+		});
+
+		$('#six').click(function(){
+    		$("#six").css('border', '3px solid black'); 
+			$("#one").css('border', '0px solid black'); 
+			$("#two").css('border', '0px solid black');
+    		$("#three").css('border', '0px solid black');
+    		$("#four").css('border', '0px solid black'); 
+    		$("#five").css('border', '0px solid black'); 
+		});
+	</script>
+</body>
+</html>

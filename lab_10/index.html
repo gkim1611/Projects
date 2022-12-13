@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Effects</title>
+        
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            body {
+                background-color: #A98875;
+                padding: 10px;
+            }    
+
+            #header {
+                color: #FFF;
+                font-size: 3em;
+                text-align: center;
+                /* aligning horizontally has 3 ways, 2 for now: */
+
+                width: 1080px;
+                margin-left: auto;
+                margin-right: auto;
+
+                padding: 10px;
+            }
+
+            #container {
+                width: 1100px;
+                height: 480px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #B0D09F;
+                padding: 10px;
+            }
+            #duck1 {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative;
+                bottom: 420px;
+                transition: all 1s ease 0s;
+
+            }
+            #duck2 {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative;
+                transition: all 1s ease 1s;
+            }
+            #duck3 {
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: relative;
+                bottom: 150px;
+                transition: all 1s ease 2s;
+            }
+            #container:hover #duck1 {
+			    transform: translate(-350px, 0px);
+		    }
+            #container:hover #duck2 {
+			    transform: translate(350px, 110px);
+		    }
+            #container:hover #duck3 {
+			    transform: translate(0px, 50px);
+		    }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id = "header">
+            <h1>CSS Effects</h1>
+        </div> <!-- #header -->
+
+        <div id="container" class="section">
+            <div class="container">
+                <img id="duck2" class="img" src="img/duck2.jpeg" alt="duck2">
+            </div>
+            <div class="container">
+                <img id="duck3" class="img" src="img/duck3.jpg" alt="duck3">
+            </div>
+            <div class="container">
+                <img id="duck1" class="img" src="img/duck1.jpeg" alt="duck1">
+            </div>
+        </div> <!-- #delay -->
+
+    </body>  <!-- body -->
+</html>
