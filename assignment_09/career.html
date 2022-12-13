@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Career</title>
+        
+        <meta charset="utf-8">
+
+        <meta name="keywords" content="HTML, CSS, resume, personal portfolio,">
+
+        <meta name="description" content="The career section of my website will include my professional journey. I include my university diploma and all the other jobs that I've had in the past.">
+        
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #navbar {
+                background-color: white;
+            }
+            h1 {
+                color: black;
+                padding-top: 10px;
+                font-size: 4em;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                position: relative;
+                padding-left: 0px;
+                margin: 0px;
+
+                right: 10px;
+                bottom: 20px;
+            }
+            h2 {
+                color: #778A35;
+                font-size: 1em;
+                font-family: "axis";
+                padding: 0px;
+            }
+            h3 {
+                color: #778A35;
+                font-size: .8em;
+                font-family: "general";
+                padding: 0px;
+            }
+ 
+            #content {
+                min-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top: 100px;
+                display:flex;
+                position: relative;
+                top: 115px;
+            }
+
+            #side {
+                width: 70px;
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                top: 35px;
+
+                display: block;
+            }
+
+            #main {
+                width: 2000px;
+                height: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 5px 20px;
+                margin: 0px 10px;
+            }
+
+            #profile {
+                width: 240px;
+                border: 2px solid white;
+                border-radius: 50%;
+            } 
+            .job {
+                width: 200px;
+                height: 100px;
+                color: #778A35;
+                padding: 0px;
+            }
+
+            #quote {
+                font-size: 1.5em;
+                color: black;
+                padding: 0px;
+                margin: 0px;
+            }
+            #resume {
+                font-size: 1.2em;
+                color: rgb(0, 108, 16);
+            }
+
+            .text {
+                color: black;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #extra {
+                position: relative;
+                bottom: 210px;
+                right: 25px;
+                
+            }
+
+            hr.new {
+                border: 1px solid #778A35;
+                position: relative;
+                right: 545px;
+                width: 400px;
+            }
+            hr.new1 {
+                border: 1px solid #778A35;
+                position: relative;
+                right: 557px;
+                width: 400px;
+            }
+            .duckfeet {
+                width: 200px;
+                position: relative;
+            }
+          
+            body {
+                width: 1600px;
+            }
+            #one {
+                bottom: 150px;
+                visibility: hidden;
+            }
+            #two {
+                right: 190px;
+                bottom: 10px;
+            }
+            #three {
+                left: 230px;
+                bottom: 90px;
+                opacity: 40%;
+            }
+            #four {
+                left: 260px;
+                top: 30px;
+                opacity: 40%;
+            }
+            #five {
+                left: 770px;
+                bottom: 75px;
+                opacity: 40%;
+            }
+            #six {
+                left: 850px;
+                top: 20px;
+                opacity: 40%;
+            }
+            #seven {
+                left: 1320px;
+                top: 0px;
+                opacity: 40%;
+                z-index: 1000;
+            }
+            #path {
+                height: 300px;
+                width: 500px;
+            }
+            #jobs {
+                width: 900px;
+                height: 500px;
+                position: relative;
+                text-align: center;
+            }
+            /* body {
+                overflow-y: hidden;
+            } */
+
+            #jobone {
+                position: relative;
+                bottom: 255px;
+                left: 15px;
+                height: 50px;
+                background-color: white;
+            }
+            #jobtwo {
+                position: relative;
+                bottom: 195px;
+                left: 255px;
+                width: 130px;
+                height: 65px;
+            }
+            #jobthree {
+                position: relative;
+                bottom: 180px;
+                left: 500px;
+                width: 130px;
+                height: 87px;
+            }
+            #jobfour {
+                position: relative;
+                bottom: 160px;
+                left: 800px;
+                width: 140px;
+                height: 70px;
+            }
+            #jobfive {
+                position: relative;
+                bottom: 160px;
+                left: 1085px;
+                width: 110px;
+                height: 70px;
+                z-index: 1001;
+            }
+            #jobsix {
+                position: relative;
+                width: 200px;
+                bottom: 40px;
+                left: 1355px;
+                z-index: 1001;
+                width: 130px;
+                height: 87px;
+            }
+            #col {
+                display: flex;
+                flex-direction: column;
+                width: 1000px;           
+            }
+
+            #top {
+                opacity: 100%;
+            }
+            .bottom {
+                display: none;
+            }
+            .top:hover + .bottom{
+                display: block;
+                opacity: 100%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div id="ducky">
+
+                <div id="duck"></div>
+                <p id="wilson">hover to give wilson the duck a bath!</p>
+
+            </div>
+            <a href="index.html" >home.</a>
+            <a href="aboutme.html">bio.</a>
+            <a id="active-nav" href="career.html">career.</a>
+            <a href="projects.html">projects.</a>
+            <a href="contact.html">contact.</a>
+        </div> <!-- #navbar -->
+        
+
+        <div id="content">
+            <div id="side">
+                <h1>My Journey</h1>
+            </div>            
+
+            <div id="main">
+                <div id="col">
+                    <div id="path">
+                        <img class="duckfeet" id="one" src="img/d1.png" alt="d1">
+                        <img class="duckfeet" id="two" src="img/d2.png" alt="d2">
+                        <img class="duckfeet" id="three" src="img/d3.png" alt="d3">
+                        <img class="duckfeet" id="four" src="img/d4.png" alt="d4">
+                        <img class="duckfeet" id="five" src="img/d5.png" alt="d5">
+                        <img class="duckfeet" id="six" src="img/d6.png" alt="d6">
+                        <img class="duckfeet" id="seven" src="img/d7.png" alt="d7">
+                    </div>
+
+                    <div id="jobs">
+                        <div class="job" id="jobone">
+                            <h2 class="top" id="topone">Ernst & Young</h2>
+                            <h3>Cybersecurity Consultant Intern</h3>  
+                        </div>
+            
+                        <div class="job" id="jobtwo">
+                            <h2 class="top" id="toptwo">Metrans</h2>
+                            <h3 class="bottom" id="bottomtwo">Website Quality Assurance Manager</h3>
+                        </div>  
+                        
+                        <div class="job" id="jobthree">
+                            <h2 class="top" id="topthree">Sponsored Project Accounting</h2>
+                            <h3 class="bottom" id="bottomthree">Research Intern</h3>
+                        </div>   
+                    
+                        <div class="job" id="jobfour">
+                            <h2 class="top" id="topfour">Questbridge Chapter</h2>
+                            <h3 class="bottom" id="bottomfour">Web Designer</h3>
+                        </div>  
+            
+                        <div class="job" id="jobfive">
+                            <h2 class="top" id="topfive">JoongAng Ilbo</h2>
+                            <h3 class="bottom" id="bottomfive">Data Manager</h3>
+                        </div>
+            
+                        <div class="job" id="jobsix">
+                            <h2 class="top" id="topsix">Uni. of Southern California</h2>
+                            <h3 class="bottom" id="bottomsix">B.S in Computer Science & Business Administration</h3>
+                        </div> 
+                    </div>
+                </div>
+
+                <div id="extra">
+                    <p id="quote"><em>"Fill your life <br> with experiences, <br> not things. <br> Have stories to tell, <br> not stuff to show."</em></p>
+                    <hr class="new">
+                    <hr class="new1">
+                    <p class="text">here is my detailed <strong><a id="resume" href="files/gKim_resume.pdf" download="">résumé</a></strong> if you're interested</p>
+                </div>
+            </div>
+        </div> <!-- #content -->
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        
+        
+
+        <script>
+    
+            $('#toptwo').hover(function(){
+                $("#three").css('opacity', '100%');
+                $("#bottomtwo").css('display', 'block');
+                $("#bottomtwo").css('opacity', '100%');
+                $("#jobtwo").css('background-color', 'white');
+            });
+    
+            $('#topthree').hover(function(){
+                $("#four").css('opacity', '100%');
+                $("#bottomthree").css('display', 'block');
+                $("#bottomthree").css('opacity', '100%');
+                $("#jobthree").css('background-color', 'white');
+
+            });
+    
+            $('#topfour').hover(function(){
+                $("#five").css('opacity', '100%');
+                $("#bottomfour").css('display', 'block');
+                $("#bottomfour").css('opacity', '100%');
+                $("#jobfour").css('background-color', 'white');
+
+            });
+    
+            $('#topfive').hover(function(){
+                $("#six").css('opacity', '100%');
+                $("#bottomfive").css('display', 'block');
+                $("#bottomfive").css('opacity', '100%');
+                $("#jobfive").css('background-color', 'white');
+            });
+    
+            $('#topsix').hover(function(){
+                $("#seven").css('opacity', '100%');
+                $("#bottomsix").css('display', 'block');
+                $("#bottomsix").css('opacity', '100%');
+                $("#jobsix").css('background-color', 'white');
+            });
+        </script>
+    </body>  <!-- body -->
+</html>

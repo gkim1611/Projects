@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "axis";
+	src: url("fonts/Axis Extrabold.otf");
+}
+@font-face {
+	font-family: "general";
+	src: url("fonts/GeneraAltLight-ALEGD.otf");
+}
+
+h1 {
+    color: black;
+    font-family: 'axis';
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 1em;
+    position: fixed;
+    top: 0px;
+    z-index: 1010;
+    font-family: "axis";
+}
+
+#navbar a {
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    display: block;
+    color: black;
+    padding-right: 20px;
+    font-family: "axis";
+}
+
+#navbar a:hover, #navbar #active-nav {
+    color: #778A35;
+    font-family: "axis";
+}
+
+p {
+    font-family: "general";
+}
+
+#duck {
+    width: 53px;
+    height: 53px;
+    padding-top: 5px;
+    background: url("img/duckdance.gif") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 5px;
+
+    margin-right: auto;
+    padding: 2px;
+
+}
+#duck:hover {
+    background: url("img/duckwater.gif") no-repeat;
+    width: 53px;
+    height: 53px;
+    background-size: cover;
+    background-position: center;
+    padding: 2px;
+}
+#wilson {
+    font-size: .8em;
+    margin: 0px;
+    padding: 5px;
+    margin-right: auto;
+    text-align: left;
+    position: static;
+    font-family: "general";
+}
+#ducky {
+    margin-right: auto;
+}
+
+body {
+    margin: 0px;
+}

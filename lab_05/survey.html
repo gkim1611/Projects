@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<style>
+		body {
+			margin: 0px;
+			background-color:bisque;
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.form-row {
+			margin: 10px 0px;
+			display: flex;
+		}
+
+		.form-col {
+			width: 250px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Breakfast Survey</h1>
+
+	<form action="confirmation.html">
+		
+		<div class="form-row">
+			<div class="form-col">
+				<label for="name-id">Name:</label>
+			</div>
+
+			<input id="name-id" type="text" placeholder="Your Name">
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+			<div class="form-col">
+				What is your favorite waffle topping?
+			</div>
+
+			<label>
+				<input type="radio" name="current-student">
+				Syrup
+			</label>
+
+			<label>
+				<input type="radio" name="current-student">
+				Fruits
+			</label>
+
+			<label>
+				<input type="radio" name="current-student">
+				Butter
+			</label>
+
+			<label>
+				<input type="radio" name="current-student">
+				Other
+			</label>
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+			<div class="form-col">
+				Which breakfast sweets do you like?
+			</div>
+
+			<label>
+				<input type="checkbox">Pastries
+			</label>
+
+			<label>
+				<input type="checkbox">Cereal
+			</label>
+
+			<label>
+				<input type="checkbox">Fruits
+			</label>
+
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+
+			<div class="form-col">
+				<label for="subject">How did you hear about us?</label>
+			</div>
+
+			<select id="subject">
+				<option>Website</option>
+				<option>Email</option>
+				<option>Referral</option>
+			</select>
+
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+
+			<div class="form-col">
+				<label for="msg">Comments:</label>
+			</div>
+
+			<textarea id="msg" placeholder="(optional)"></textarea>
+
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+			<div class="form-col">
+				
+			</div>
+
+			<label>
+				<input type="checkbox">I accept terms & conditions
+			</label>
+		</div> <!-- .form-row -->
+
+		<div class="form-row">
+			<button type="submit">Submit</button>
+		</div> <!-- .form-row -->
+
+	</form>
+</body>
+</html>

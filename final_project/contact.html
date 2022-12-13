@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="keywords" content="HTML, CSS, resume, personal portfolio,">
+
+        <meta name="description" content="The contact me page of my website will give users different ways to contact me. I have also linked the different platforms in which they can find me.">
+        
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #navbar {
+                background-color: white;
+            }
+            h1 {
+                font-size: 2.5em;
+                position: relative;
+                top: 25px;
+            }
+            #main {
+                width: 36%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top: 100px;
+            }
+            #note {
+                font-size: 1.3em;
+                text-align: center;
+                font-family: "general";
+                color: black;
+            }
+            #social {
+                border-top: 5px solid #778A35;
+                border-bottom: 5px solid #778A35;
+                padding: 10px;
+                background-color: white;
+            }
+            .icons {
+                width: 80px;
+                padding: 15px;
+            }
+            #handles {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            #email {
+                text-align: center;
+                font-family: "general";
+                font-size: 1.2em;
+                color: black;
+            }
+            @media (min-width: 1400px) {
+                body {
+                    padding: 0px;
+                }
+
+                #navbar {
+                    position: static;
+                }
+                
+            }
+            @media (max-width: 1399px) {
+                body {
+                    padding: 0px;
+                }
+
+                #navbar {
+                    position: static;
+                }
+
+                #main {
+                    width: 60%;
+                }
+                .icons {
+                    width: 75px;
+                }
+                
+            }
+            @media (max-width: 1199px) {
+                body {
+                    padding: 0px;
+                }
+
+                #navbar {
+                    position: static;
+                }
+
+                #main {
+                    width: 60%;
+                }
+                .icons {
+                    width: 75px;
+                }
+                
+            }
+            @media (max-width: 991px) {
+                body {
+                    padding: 0px;
+                }
+
+                #navbar {
+                    position: static;
+                }
+
+                #main {
+                    width: 60%;
+                }
+                .icons {
+                    width: 70px;
+                }
+                
+            }
+
+            @media (max-width: 767px) {
+                body {
+                    padding: 0px;
+                }
+
+                #navbar {
+                    position: static;
+                }
+
+
+                #navbar > a {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 70%;
+                    padding: 0px;
+                    padding-right: 5px;
+                    
+                }
+                #main {
+                    width: 90%;
+                }
+                .icons {
+                    width: 50px;
+                }
+                #duck {
+                    display: none;
+                }
+                #duck:hover {
+                    display: none;
+                }
+                #wilson {
+                    display: none;
+                }
+
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div id="ducky">
+
+                <div id="duck"></div>
+                <p id="wilson">hover to give wilson the duck a bath!</p>
+
+            </div>
+            <a href="index.html" >home.</a>
+            <a href="aboutme.html">bio.</a>
+            <a href="career.html">career.</a>
+            <a href="projects.html">projects.</a>
+            <a id="active-nav" href="contact.html">contact.</a>
+        </div> <!-- #navbar -->
+
+        <div id="main">
+            <h1>Contact</h1>
+            <div id="social">
+                <p id="note">As a neat-freak, I always have 0 unread emails and my inbox probably has fewer than 10 emails right now. <br> I also wear an Apple Watch so I usually respond to direct messages immediately :)</p>
+                <p id="email"><em>gracekim1611@gmail.com</em> | <em>gnarlygrandmother@gmail.com</em>
+                <div id="handles">
+                    <a href="https://www.linkedin.com/in/gracehdkim/" target="_blank"><img class="icons" src="img/link.png" alt="linkedin" ></a>
+                    <a href="https://www.instagram.com/gnarlygrandmother/" target="_blank"><img class="icons" src="img/insta.png" alt="insta" ></a>
+                    <a href="https://www.tiktok.com/@gnarlygrandmother?_t=8X59COP8xh8&_r=1" target="_blank"><img class="icons" src="img/tiktok.png" alt="tiktok" ></a>
+                    <a href="https://youtube.com/@GnarlyGrandmother" target="_blank"><img class="icons" src="img/you.png" alt="youtube" ></a>
+                </div>
+            </div> <!-- #social -->
+        </div> <!-- #main -->
+
+    </body>  <!-- body -->
+</html>

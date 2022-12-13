@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+
+        <meta charset="utf-8">
+
+        <meta name="keywords" content="HTML, CSS, resume, personal portfolio,">
+
+        <meta name="description" content="This is the about me section of my website. I detail more information and little facts about me in a creative manner.">
+        
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            body {
+                margin:0px; 
+                padding: 0px; 
+                height:100%;
+                overflow-y: hidden;
+            } 
+
+            h2 {
+                font-family: "axis";
+            }
+
+            div.goButton {
+                height: 60px; 
+                width:220px; 
+                margin:0px;
+
+                position: relative;
+                bottom: 617px;
+                left: 730px;
+                line-height: 70px;
+            }
+
+            div.goButton h2 {
+ 
+                background-color: black;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                font-weight: normal;
+                cursor: pointer; 
+                margin: 0px; 
+                padding: 0px;
+            } 
+
+            #infj {
+                font-size: 3em;
+            }
+
+            div.headshot {
+                clear:both; 
+                margin:0px; 
+                padding: 0px;
+                
+
+                position: relative;
+                right: 110px;
+                bottom: 70px;
+                z-index: 1001;
+            }
+            
+            #profile {
+                width: 1800px;
+            }
+
+            #duckling {
+                width: 200px;
+                position: relative;
+                left: 760px;
+                bottom: 100px;
+            }
+            #icon {
+                width: 500px;
+                height: 500px;
+            }
+            #ey, #calistenics, #cyber {
+                font-size: 1.5em;
+            }
+            #cs, #business{
+                font-size: 1.2em;
+            }
+            #usc {
+                font-size: 2em;
+            }
+            .iconclass {
+                background: url('https://api.iconify.design/icon-park-solid/duck.svg') no-repeat center center / contain;
+                width: 200px;
+                height: 200px;
+
+                position: relative;
+                left: 700px;
+            }
+            .iconclasstwo {
+                background: url('https://api.iconify.design/fluent/brain-circuit-20-filled.svg') no-repeat center center / contain;                width: 200px;
+                height: 200px;
+
+                position: relative;
+                left: 700px;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+        <div class="ignoreMe" id="navbar">
+            <div class="ignoreMe" id="ducky">
+    
+                <div class="ignoreMe" id="duck"></div>
+                <p class="ignoreMe" id="wilson">hover to give wilson the duck a bath!</p>
+    
+            </div>
+            <a class="ignoreMe" href="index.html" >home.</a>
+            <a class="ignoreMe" id="active-nav" href="aboutme.html">bio.</a>
+            <a class="ignoreMe" href="career.html">career.</a>
+            <a class="ignoreMe" href="projects.html">projects.</a>
+            <a class="ignoreMe" href="contact.html">contact.</a>
+        </div> <!-- #navbar -->
+        
+
+        <div class="goBtnCentre ignoreMe">
+            <div class="iconclass"></div>
+            <div class="iconclasstwo"></div>
+        </div>
+
+        <div class="goBtnCentre ignoreMe">
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="usc">USC ✌︎</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="infj">INFJ</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="cali">California</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe">Left-Handed</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe">Dusty Miller</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe">Chocolate</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="cs">Computer Science</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="business">Business Admin.</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="ey">Ernst & Young</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="calistenics">Calistenics</h2>
+            </div>
+            <div class="goButton jGravity">
+                <h2 class="ignoreMe" id="cyber">Cybersecurity</h2>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="headshot ignoreMe">
+            <img class="ignoreMe" id="profile" src="img/head.gif" alt="profile">
+        </div>
+
+        
+    
+        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+        
+        <!-- jQuery *Required -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- jGravity file -->
+        <script type="text/javascript" src="jGravity.js"></script>
+
+        <script>
+            $(document).ready(() => {
+                    $('body').jGravity({ // jGravity works best when targeting the body
+                        target: 'everything', // Enter your target critera e.g. 'div, p, span', 'h2' or 'div#specificDiv', or even 'everything' to target everything in the body
+                        ignoreClass: 'ignoreMe', // Specify if you would like to use an ignore class, and then specify the class
+                        weight: 20, // Enter any number 1-100 ideally (25 is default), you can also use 'heavy' or 'light'
+                        depth: 5, // Enter a value between 1-10 ideally (1 is default), this is used to prevent targeting structural divs or other items which may break layout in jGravity
+                        drag: true // Decide if users can drag elements which have been effected by jGravity
+                    });
+
+            });
+        </script>
+    </body>
+</html>

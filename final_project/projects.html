@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <title>Projects</title>
+            
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="keywords" content="HTML, CSS, personal website, personal portfolio,">
+
+    <meta name="description" content="I have included all the personal projects that I've worked on and what I'm passionate about, outside of my career.">
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" type="text/css" href="zoom.css">
+    
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #content {
+            width: fit-content;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: 45px;
+            padding: 5px;
+            display: flex;
+        }
+    
+        .container {
+          max-width: 150px;
+        }
+
+        #pond {
+            position: relative;
+            width: 1450px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .lily {
+            width: 130px;
+        }
+
+        #lilyone {
+            position: relative;
+            bottom: 495px;
+            left: 490px;
+        }
+
+        #lilytwo {
+            position: relative;
+            bottom: 385px;
+            left: 630px;
+        }
+        #lilythree {
+            position: relative;
+            bottom: 665px;
+            left: 880px;
+        }
+        #lilypads {
+            margin: 50px;
+            max-width: 300px;
+        }
+        #portfolio {
+            position: relative;
+            left: 1081px;
+            bottom: 650px;
+            transform: rotate(-54deg);
+            z-index: 554;
+        }
+        #link {
+            font-size: .9em;
+            color: rgb(0, 108, 16);
+        }
+        #main {
+            width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+      </style>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div id="ducky">
+        
+                <div id="duck"></div>
+                <p id="wilson">hover to give wilson the duck a bath!</p>
+        
+            </div>
+            <a href="index.html" >home.</a>
+            <a href="aboutme.html">bio.</a>
+            <a href="career.html">career.</a>
+            <a id="active-nav" href="projects.html">projects.</a>
+            <a href="contact.html">contact.</a>
+        </div> <!-- #navbar -->
+        
+        <div id="main">
+            <div id="content">
+                <img id="pond" src="img/pond.png" alt="pond"> 
+            </div>  
+            
+            <div class="container">
+                <img id="lilyone" class="lily" data-action="zoom" src="img/lily1.png" alt="lily1">
+                <img id="lilytwo" class="lily"  data-action="zoom"src="img/lily2.png" alt="lily2">
+                <img id="lilythree" class="lily" data-action="zoom" src="img/lily3.png" alt="lily3">
+                <p id="portfolio"><a href="https://docs.google.com/spreadsheets/d/1nqitlcLrAAnKmx0rO0GtVXrBZaJfPrQplaLn96ve0Ng/edit?usp=sharing" id="link" target="_blank">investment portfolio</a></p>
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="zoom.js"></script>
+    </body>
+</html>
+    
